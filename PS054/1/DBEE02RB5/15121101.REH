@@ -1,0 +1,100 @@
+Time=15-12-11,14:27:13.976!      
+Trig=Manual Trig         !       
+TestTrig=0!                      
+TransmAccuracy=100!              Percent
+RecordingAccuracy=100!           Percent
+Recording=1!                     Disturbance number
+TimeSync=0!                      0=None, 1=SPA ch A, 2=SPA ch B, 3= Minute pulse pos, 4=Minute pulse neg
+CT-Earth=0!                      1 = In,  0 = Out
+FaultLocInst=0!                  1 = Installed,  0 = Not installed,  -1 = Not applicable
+FaultLocStat=1!                  0 = OK,  1 = Error,  -1 = Not applicable
+FaultLocLoop=0!                  0 = Not valid,  1 = L1-N,  2 = L2-N,  3 = L3-N  4 = L1-L2  5 = L2-L3  6 = L3-L1,  -1 = Not applicable
+FaultLocDist=0!                  Distance to fault (%),  -1 = Not applicable
+FaultLocDir=0!                   Fault direction, 0 = Not valid, 1 = Forward, 2 = Forward beyond range,  -1 = Not applicable
+LineLengthUnit=0!                Line length unit,  0 = km,  1 = mile,  -1 = Not applicable
+LineLength=0!                    Line length (km or mile), -1 = Not applicable
+DisRec=3!                        0 = REOR, 1 = VICAN, 2 = SYSCON, 3 = REO, 4 = RET
+ThreePhase=1!                    0 = 1-phase terminal, 1 = 3-phase terminal
+LFreq=0!                         0 = 50,  1 = 60,  2 = 16 2/3,  3 = 25 Hz
+ttot=620!                        Total recording time (ms)
+tpre=100!                        This disturance Pre-fault rec. length (ms)
+tpreset=100!                     Disturbance recorder default Pre-fault rec. time (ms)
+tp1=500!                         (ms)
+tp2=0!                           (ms)
+tlim=1000!                       (ms)
+pf2s1=0!                         Post fault 2 start #1 , 0=no start or retrig (ms)
+pf2r1=0!                         Post fault 2 retrigg #1 (ms)
+pf2s2=0!                         Post fault 2 start #2 , 0=no start or retrig (ms)
+pf2r2=0!                         Post fault 2 retrigg #2 (ms)
+pf2s3=0!                         Post fault 2 start #3 , 0=no start or retrig (ms)
+SampleRate=1000!                 50 percent of the value for low freq
+SrcType=REx500 25       !        
+SrcVer=2.500!                    
+StationId=String, 16 char !      
+ObjectId=String, 16 char !       
+UnitId=String, 16 char !         
+StationNr=0!                     
+ObjectNr=0!                      
+UnitNr=0!                        
++AnalogueChannels
+#1,id=U1              ,InUse=1,Prim=127.018,Sec=0.064,Type=0,TrigL=0,Low=90,EnabL=0,TrigH=0,High=110,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#6,id=I1              ,InUse=1,Prim=2000.000,Sec=1.000,Type=1,TrigL=0,Low=50,EnabL=0,TrigH=0,High=200,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#2,id=U2              ,InUse=1,Prim=127.018,Sec=0.064,Type=0,TrigL=0,Low=90,EnabL=0,TrigH=0,High=110,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#7,id=I2              ,InUse=1,Prim=2000.000,Sec=1.000,Type=1,TrigL=0,Low=50,EnabL=0,TrigH=0,High=200,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#3,id=U3              ,InUse=1,Prim=127.018,Sec=0.064,Type=0,TrigL=0,Low=90,EnabL=0,TrigH=0,High=110,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#8,id=I3              ,InUse=1,Prim=2000.000,Sec=1.000,Type=1,TrigL=0,Low=50,EnabL=0,TrigH=0,High=200,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#4,id=U4              ,InUse=1,Prim=127.018,Sec=0.064,Type=0,TrigL=0,Low=90,EnabL=0,TrigH=0,High=110,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#9,id=I4              ,InUse=1,Prim=2000.000,Sec=1.000,Type=1,TrigL=0,Low=50,EnabL=0,TrigH=0,High=200,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#5,id=U5              ,InUse=1,Prim=127.018,Sec=0.064,Type=0,TrigL=0,Low=90,EnabL=0,TrigH=0,High=110,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+#10,id=I5              ,InUse=1,Prim=2000.000,Sec=1.000,Type=1,TrigL=0,Low=50,EnabL=0,TrigH=0,High=200,EnabH=0,Val=0,Res=0.005000,prRMS=0.000,poRMS=0.000,
+-AnalogueChannels
++DigitalChannels
+#1,id=Input1          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#2,id=Input2          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#3,id=Input3          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#4,id=Input4          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#5,id=Input5          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#6,id=Input6          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#7,id=Input7          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#8,id=Input8          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#9,id=Input9          ,Setting=0,Enabled=0,Value=0,Trig=0,
+#10,id=Input10         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#11,id=Input11         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#12,id=Input12         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#13,id=Input13         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#14,id=Input14         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#15,id=Input15         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#16,id=Input16         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#17,id=Input17         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#18,id=Input18         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#19,id=Input19         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#20,id=Input20         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#21,id=Input21         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#22,id=Input22         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#23,id=Input23         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#24,id=Input24         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#25,id=Input25         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#26,id=Input26         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#27,id=Input27         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#28,id=Input28         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#29,id=Input29         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#30,id=Input30         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#31,id=Input31         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#32,id=Input32         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#33,id=Input33         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#34,id=Input34         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#35,id=Input35         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#36,id=Input36         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#37,id=Input37         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#38,id=Input38         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#39,id=Input39         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#40,id=Input40         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#41,id=Input41         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#42,id=Input42         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#43,id=Input43         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#44,id=Input44         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#45,id=Input45         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#46,id=Input46         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#47,id=Input47         ,Setting=0,Enabled=0,Value=0,Trig=0,
+#48,id=Input48         ,Setting=0,Enabled=0,Value=0,Trig=0,
+-DigitalChannels
