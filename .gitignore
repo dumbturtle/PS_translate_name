@@ -23,6 +23,6 @@ config.py
 !requirements.txt
 *.jpg
 downloads/
-PS054/
+/PS054/
 .theia/
 __pycache__/
