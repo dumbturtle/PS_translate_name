@@ -33,10 +33,12 @@ def file_defference(source_folder: str, destination_folder: str) -> list:
 
     #Сравниваем два списка файлов  и если элемент списка разности входит в исходную папку, то добавляем его в список
     difference_files_list = [file_name  for file_name in list(set(source_files_list) ^ set(destination_files_list)) if file_name in source_files_list]
-    logging.info('Обнаружена разность файлов:' + str(difference_files_list) + 'в папке:{}'.format(source_folder))
-
+    if len(difference_files_list) != 0:
+        logging.info('Обнаружена разность файлов:' + str(difference_files_list) + 'в папке:{}'.format(source_folder))
+        
+    else:
+        logging.info('В папке:{}'.format(source_folder) + ' все файлы совпадают.')
     return difference_files_list
-
 
 #Формируем список папок из существующей папки с офцилограммами
 def list_folders_of_source_folders(folder_path: str) -> list:
@@ -56,10 +58,12 @@ def list_folders_of_compresion_file(file_path: str) -> list:
 
 #Сравниваем два списка на разность
 def differents_between_file_and_folder(list_folder: list, list_file: list) -> list:
+    difference_list = []
     if list_folder != list_file:
         difference_list = list(set(list_folder) ^ set(list_file))
-        logging.info('Обнаружена разность в количестве папок между файлом и папкой источником: ' + ', '.join(difference_list))
+        logging.info('Обнаружена разность в количестве папок между файлом и папкой источником:' + ', '.join(difference_list))
     return difference_list
+
 
 
 #Обрабатываем только лист пересечений
@@ -88,7 +92,7 @@ def copy_file(file_path: str, source_folder: str, destination_folder: str) -> No
             #Проверяем, входит ли название папки в файле в список разности
             if line["Обозначение"] in intersection_list:
                 #Формируем путь до папки назначения
-                dst_new_folder  = (destination_folder + ('{}_{}_{}_{}'.format(line['ПС'],line['Напр.'],line['Присоединение'],line['Терминал']))).replace(" ","_")
+                dst_new_folder  = (destination_folder + ('{}'.format(line['ПС']))).replace(" ","_")
                 #Формируем путь до папки источника
                 dst_old_folder = source_folder + line["Обозначение"]
                 #Формируем разность ФАЙЛОВ в каталоге назначения и источникап
